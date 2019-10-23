@@ -1,4 +1,4 @@
-//ÄÄÇ»ÅÍÇĞ°ú 20190975 ½ÅÈ¿°æ
+//ì»´í“¨í„°í•™ê³¼ 20190975 ì‹ íš¨ê²½
 import java.util.Scanner;
 
 public class Practice13 {
@@ -6,26 +6,32 @@ public class Practice13 {
 	public static void main(String[] args) {
 		
 		Scanner input = new Scanner(System.in);
+		int least;
 		
-		System.out.print("Ã¹ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì²« ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int first = input.nextInt();
-		int least = first;
-		
-		System.out.print("µÎ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ë‘ ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int second = input.nextInt();
-		
-		if (least >= second) {
-			least = second;
-		}
-		
-		System.out.print("¼¼ ¹øÂ° ¼ıÀÚ¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
+		System.out.print("ì„¸ ë²ˆì§¸ ìˆ«ìë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
 		int third = input.nextInt();
-		
-		if (least >= third) {
-			least = third;
+		//ë¬¸ì œ ì¡°ê±´ ì˜ ì§€í‚¤ê¸°
+		if (first >= second) {
+			if (second >= third){
+				least = third;
+			}
+			else
+				least = second;	
+			
+		}
+		else {
+			if (first >= third){
+				least = third;
+			}
+			else
+				least = first;
 		}
 		
-		System.out.println("°¡Àå ÀÛÀº ¼ıÀÚ´Â "+ least + "ÀÔ´Ï´Ù.");
+		System.out.println("ê°€ì¥ ì‘ì€ ìˆ«ìëŠ” "+ least + "ì…ë‹ˆë‹¤.");
 		
 		input.close();
 
