@@ -1,4 +1,4 @@
-//ÄÄÇ»ÅÍÇĞ°ú 20190975 ½ÅÈ¿°æ
+//ì»´í“¨í„°í•™ê³¼ 20190975 ì‹ íš¨ê²½
 import java.util.Scanner;
 
 public class Practice12 {
@@ -7,23 +7,23 @@ public class Practice12 {
 		
 		Scanner input = new Scanner(System.in);
 		
-		System.out.print("Å°¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
-		double height = input.nextInt();
-		System.out.print("¸ö¹«°Ô¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ");
-		int weight = input.nextInt();
+		System.out.print("í‚¤ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
+		double height = input.nextDouble(); //ë¬¸ì œ ì¡°ê±´ ì˜ ì§€í‚¤ê¸°
+		System.out.print("ëª¸ë¬´ê²Œë¥¼ ì…ë ¥í•˜ì„¸ìš”: ");
+		double weight = input.nextDouble(); //ë¬¸ì œ ì¡°ê±´ ì˜ ì§€í‚¤ê¸°
 		
 		double standard = (height - 100) * 0.9;
 		
-		System.out.println("Ç¥ÁØÃ¼ÁßÀº "+ standard + "ÀÔ´Ï´Ù.");
+		System.out.println("í‘œì¤€ì²´ì¤‘ì€ "+ standard + "ì…ë‹ˆë‹¤.");
 		
 		if (weight > standard) {
-			System.out.println("°úÃ¼Áß ÀÔ´Ï´Ù.");
+			System.out.println("ê³¼ì²´ì¤‘ ì…ë‹ˆë‹¤.");
 		}
 		else if (weight == standard) {
-			System.out.println("Ç¥ÁØÃ¼Áß ÀÔ´Ï´Ù.");
+			System.out.println("í‘œì¤€ì²´ì¤‘ ì…ë‹ˆë‹¤.");
 		}
 		else {
-			System.out.println("ÀúÃ¼Áß ÀÔ´Ï´Ù.");
+			System.out.println("ì €ì²´ì¤‘ ì…ë‹ˆë‹¤.");
 		}
 		
 		input.close();
